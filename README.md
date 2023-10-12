@@ -69,25 +69,7 @@ Magento 2.4.6-p2 Docker Setup:
           		    
           		2. Install M2 via CLI(/var/www/magento246):
                        
-                        bin/magento setup:install \
-                        --base-url=http://magento246.loc/ \
-                        --db-host=mariadb_246 \
-                        --db-name=magento246 \
-                        --db-user=mage246_user \
-                        --db-password=mage246_pass \
-                        --admin-firstname=admin \
-                        --admin-lastname=admin \
-                        --admin-email=admin@admin.com \
-                        --admin-user=admin \
-                        --admin-password=admin123 \
-                        --language=en_US \
-                        --currency=USD \
-                        --timezone=America/Chicago \
-                        --use-rewrites=1 \
-                        --search-engine=elasticsearch7 \
-                        --elasticsearch-host=elasticsearch \
-                        --elasticsearch-index-prefix=magento246 \
-                        --elasticsearch-port=9200         
+                        bin/magento setup:install --base-url=http://magento246.loc/ --db-host=mariadb_246 --db-name=magento246 --db-user=mage246_user --db-password=mage246_pass --admin-firstname=admin --admin-lastname=admin --admin-email=admin@admin.com --admin-user=admin --admin-password=admin123 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 --search-engine=elasticsearch7 --elasticsearch-host=elasticsearch --elasticsearch-index-prefix=magento246 --elasticsearch-port=9200         
                            
                  3. Cross check if ES is configured, if not update the below setting in app/etc/env.php:
                              
